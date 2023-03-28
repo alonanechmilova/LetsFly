@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap");
+.body {
+  font-family: "Lato", sans-serif;
+  font-family: "Lora", serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
+.header {
+  background-image: url(//images/derek-thomson-TWoL-QCZubY-unsplash\ 4\ \(1\).png);
+  background-position: center;
+  background-size: cover;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
