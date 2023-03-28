@@ -1,1 +1,81 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap");
+* {
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-1 {
+  background: no-repeat url("../images/backgraund.svg");
+  background-size: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 30px 0;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+.header__name {
+  color: #fff;
+}
+.header__nav a {
+  color: #fff;
+}
+
+.name {
+  font-family: "Roboto Slab", serif;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.nav ul {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+}
+.nav__link a {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.social ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.langBar {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.promoContainer {
+  min-height: 760px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.promo {
+  display: flex;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.promo__title {
+  color: #fff;
+}
+.promo__subtitle {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

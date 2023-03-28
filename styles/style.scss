@@ -1,80 +1,126 @@
-// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap");
 
-// @mixin flex( $display, $flex-flow, $align, $justify){
-//     display: $display;
-//     flex-flow: $flex-flow;
-//     align: $align;
-//     justify: $justify;
-// }
+$white: #fff;
+$black: #000;
+$blackOpasity: rgba(0, 0, 0, 0.85);
+$btnGreen: #1ed400;
 
-// .body{
-//     font-family: 'Lato', sans-serif;
-//     font-family: 'Lora', serif;
-//     font-family: 'Quicksand', sans-serif;
-//     font-family: 'Roboto Slab', serif;
-// }
+$Lato: "Lato", sans-serif;
+$Lora: "Lora", serif;
+$Quicksand: "Quicksand", sans-serif;
+$RobotoSlab: "Roboto Slab", serif;
 
-// .bg-1{
-//     background: no-repeat url(../images/backgraund.svg);
-//     background-size: 100%;
-// }
+@mixin Lato($fs, $lh, $fw) {
+  font-family: $Lato;
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+}
 
-// .header {
-//     // background-image: url(../images/backgraund.svg);
-//     // background-position: center;
-//     // background-size: 100%;
-//     // height: fit-content;
-//     // width: 100%;
-//     // @include flex(flex, column nowrap, center, flex-start);
+@mixin Lora($fs, $lh, $fw) {
+  font-family: $Lora;
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+}
 
-//     &__nav, &__content{
-//         background-color: rgba(0, 0, 0, 0.85);
-//     }
+@mixin Quicksand($fs, $lh, $fw) {
+  font-family: $Quicksand;
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+}
 
-//     &__nav{
-//         @include flex(flex, row wrap, center, space-between);
-//         gap: 20px;
-//         padding: 32px 150px;
-//         // width: 100%;
-//     }
-//     &__name{
-//         font-family: "Roboto Slab";
-//         font-style: normal;
-//         font-weight: 700;
-//         font-size: 32px;
-//         line-height: 32px;
-//     }
-//     &__list{
-//         @include flex(flex, row wrap, center, start);
-//         gap: 50px;
-//     }
-//     &__list-item, &__title, &__description{
-//         color: #fff;
-//     }
-//     &__list-item{
-//         font-family: Lato;
-//         font-size: 22px;
-//         font-weight: 500;
-//         line-height: 25px;
-//         letter-spacing: 0em;
-//         text-align: left;
-//     }
-//     &__social{
-//         @include flex(flex, row wrap, center, start);
-//         gap: 35px;
-//     }
-//     &__list-item-lang{
-//         @include flex(flex, row nowrap, center, start);
-//         gap: 4px;
-//     }
-//     &__content{
-//         @include flex(flex, column nowrap, center, center);
-//         gap: 32px;
-//         padding: 40px;
-//         width: 60%;
-//         margin: 20% 0 5%;
+@mixin RobotoSlab($fs, $lh, $fw) {
+  font-family: $RobotoSlab;
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+}
 
-//     }
-// }
+* {
+  text-decoration: none;
+  list-style-type: none;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
 
+.bg-1{
+    background: no-repeat url("../images/backgraund.svg");
+    background-size: 100%;
+}
 
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $blackOpasity;
+    padding: 30px 0;
+    height: fit-content;
+    width: 100%;
+
+    &__name{
+        color: $white;
+    }
+
+    &__nav{
+        a{
+            color: $white;
+        }
+    }
+    
+}
+
+.name{
+    @include RobotoSlab(32px, 32px, 700)
+}
+
+.nav{
+    ul{
+        display: flex;
+        gap: 45px;
+        align-items: center;
+    }
+    &__link{
+        a{
+            @include Lato(22px, 26px, 500)
+        }
+    }
+}
+
+.social{
+    ul{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+.langBar{
+    display: flex;
+    gap: 5px;
+    align-items: center;;
+}
+
+.promoContainer{
+    min-height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.promo{
+    display: flex;
+    gap: 20px;
+    background-color: $blackOpasity;
+
+    &__title{
+        color: $white;
+    }
+
+    &__subtitle{
+        color: $white;
+    }
+}
