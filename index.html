@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>LetsFly</title>
-</head>
-<body>
-   <header class="header">
-    <nav class="header__nav">
-        <a class="header__name">LetsFly</a>
-        <ul class="header__list">
-            <li class="header__list-item"><a href="#">Our Tours</a></li>
-            <li class="header__list-item"><a href="#"></a>Reviews</a></li>
-            <li class="header__list-item"><a href="#"></a>Travel Stories</a></li>
-            <li class="header__list-item"><a href="#"></a>Contacts</a></li>
+  </head>
+  <body>
+    <section class="bg-1">
+      <header class="header">
+        <nav class="header__nav">
+          <h1 class="header__name name">LetsFly</h1>
+          <nav class="header__nav nav"></nav>
+          <ul>
+            <li class="nav__link"><a href="#">Our Tours</a></li>
+            <li class="nav__link"><a href="#">Reviews</a></li>
+            <li class="nav__link"><a href="#">Travel Stories</a></li>
+            <li class="nav__link"><a href="#">Contacts</a></li>
             <li class="header__list-item-lang">
-              <img src="./images/icons8-great-britain-100 1.svg" alt="flag great-britain">
-              <img src="./images/arrow.svg" alt="arrow">
+              <div class="nav__langBar landBar">
+                <img
+                  src="./images/icons8-great-britain-100 1.svg"
+                  alt="flag great-britain"
+                />
+                <img src="./images/arrow.svg" alt="arrow" />
+              </div>
             </li>
           </ul>
-          <div class="header__social">
-            <img src="./images/twitter.svg" alt="twitter"/>
-            <img src="./images/facebook.svg" alt="facebook"/>
-            <img src="./images/vk.svg" alt="vk"/>
-            <img src="./images/youtube.svg" alt="youtube"/>
-          </div>
-    </nav>
-   </header>
-   
-</body>
+          <nav class="header__social social">
+            <ul>
+              <li class="social__link">
+                <img src="./images/twitter.svg" alt="twitter" />
+              </li>
+              <li class="social__link">
+                <img src="./images/facebook.svg" alt="facebook" />
+              </li>
+              <li class="social__link">
+                <img src="./images/vk.svg" alt="vk" />
+              </li>
+              <li class="social__link">
+                <img src="./images/youtube.svg" alt="youtube" />
+              </li>
+            </ul>
+          </nav>
+        </nav>
+      </header>
+      <div class="promoContainer">
+        <div class="promo">
+          <h1 class="promo__title">It’s time to break free to fresh air</h1>
+          <span class="promo__subtitle"
+            >Holidays around the world that you deserve</span
+          >
+          <button class="promo__btn btn">ORDER TRIP</button>
+        </div>
+        <img class="header__ing" src="./images/airplane.svg" />
+      </div>
+    </section>
+    <section class="aboutUs">
+      <h1 class="aboutUs__name">About Us</h1>
+      <p class="aboutUs__text">
+        We orginize for you long-awaited rest in the most interested places of
+        our planet. In far 2009 I and my wife for the first time orginized trip
+        for out friends. From that day it was becoming thing of our full life.
+        Today we have a 27 high-qualified profeccionals and amount of out
+        clients, which got help from us, right now bigger than 4000.
+      </p>
+    </section>
+  </body>
 </html>
