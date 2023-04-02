@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap");
+.btn-default, .popular__btn, .promo__btn {
+  background: #1ed400;
+  padding: 15px 70px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 700;
+  border: none;
+}
+
 * {
   text-decoration: none;
   list-style-type: none;
-  color: #000;
+  color: #000000;
   margin: 0;
   padding: 0;
 }
@@ -12,13 +23,16 @@
   background-size: 100%;
 }
 
-.header {
+.menu {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.header {
   padding: 30px 0;
+  background-color: rgba(0, 0, 0, 0.85);
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
@@ -28,6 +42,27 @@
 }
 .header__nav a {
   color: #fff;
+}
+.header__social svg {
+  fill: #fff;
+}
+
+.footer {
+  padding: 50px 0;
+  background: no-repeat url("../images/bg_end.svg");
+  background-size: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+.footer__name {
+  color: #000000;
+}
+.footer__nav a {
+  color: #000000;
+}
+.footer__social svg {
+  fill: #000000;
 }
 
 .name {
@@ -62,12 +97,10 @@
 }
 
 .promoContainer {
-  min-height: 760px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 75px;
 }
 
 .promo {
@@ -80,13 +113,14 @@
   height: fit-content;
   gap: 20px;
   padding: 30px 20px;
+  margin: 150px 0 0;
   background-color: rgba(0, 0, 0, 0.85);
 }
 .promo__title {
   color: #fff;
   font-family: "Lora", serif;
   font-size: 74px;
-  line-height: 90px;
+  line-height: 80px;
   font-weight: 700;
 }
 .promo__subtitle {
@@ -96,17 +130,10 @@
   line-height: 28px;
   font-weight: 400;
 }
-.promo__btn {
-  background: #1ed400;
-  padding: 15px 70px;
-  color: #fff;
-  font-family: "Lato", sans-serif;
-  font-size: 15px;
-  line-height: 17px;
-  font-weight: 700;
-}
 .promo__img {
-  margin: 60px;
+  margin: 60px 0 60px 0;
+  width: 55px;
+  height: 55px;
 }
 
 .cityContainer {
@@ -157,4 +184,74 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
+}
+
+.popular {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 0;
+}
+.popular span {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.popular__ways {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.popular__picture {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.popular__picture img {
+  width: 400px;
+  height: 250px;
+}
+.popular__btn {
+  width: 20%;
+}
+.popular svg {
+  fill: #000000;
+}
+.popular__name {
+  font-family: "Roboto Slab", serif;
+  font-size: 56px;
+  line-height: 74px;
+  font-weight: 700;
+}
+
+.travel {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../images/bcg-green.svg);
+  background-size: 1920px;
+  padding: 70px 0;
+}
+.travel__ways {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.travel__picture {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+.travel__name {
+  font-family: "Roboto Slab", serif;
+  font-size: 56px;
+  line-height: 74px;
+  font-weight: 700;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
