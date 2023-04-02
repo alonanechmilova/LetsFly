@@ -254,4 +254,63 @@
   line-height: 74px;
   font-weight: 700;
   color: #fff;
+}
+
+.aboutUs {
+  padding: 140px 0 260px 0;
+  display: flex;
+  flex-direction: column;
+}
+.aboutUs__name {
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 56px;
+  line-height: 74px;
+  font-weight: 700;
+}
+.aboutUs__text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin: 32px 0 64px;
+  padding: 0 20%;
+}
+
+.block {
+  position: relative;
+}
+.block ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.block ul li {
+  display: flex;
+  justify-content: center;
+}
+.block .big {
+  color: #1ed400;
+  font-family: "Roboto Slab", serif;
+  font-size: 144px;
+  line-height: 190px;
+  font-weight: 700;
+}
+.block .div {
+  position: absolute;
+  top: 85px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.block .div span {
+  font-family: "Quicksand", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

@@ -252,3 +252,58 @@
     color: $white;
   }
 }
+
+.aboutUs{
+  padding: 140px 0 260px 0;
+  display: flex;
+  flex-direction: column;
+
+  &__name{
+    color: $black;
+    text-transform: uppercase;
+    text-align: center;
+    @include RobotoSlab(56px, 74px, 700);
+  }
+
+  &__text{
+    @include Quicksand(20px, 32px, 500);
+    text-align: center;
+    margin: 32px 0 64px;
+    padding: 0 20%;
+  }
+}
+
+.block{
+  position: relative;
+
+  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+
+    li{
+      display: flex;
+    justify-content: center;
+    }
+  }
+
+  .big{
+    color: $btnGreen;
+    @include RobotoSlab(144px, 190px, 700)
+  }
+
+  .div{
+    position: absolute;
+    top: 85px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    span{
+      @include Quicksand(32px, 40px, 400);
+      text-align: center;
+    }
+  }
+}
+
